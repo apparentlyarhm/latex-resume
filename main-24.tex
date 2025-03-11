@@ -44,8 +44,6 @@
     \usepackage{lmodern}
 \fi
 
-
-
 % Some settings:
 \AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
 \pagestyle{empty} % no header or footer
@@ -146,186 +144,175 @@
 
 
 \begin{document}
-    \newcommand{\AND}{\unskip
-        \cleaders\copy\ANDbox\hskip\wd\ANDbox
-        \ignorespaces
-    }
-    \newsavebox\ANDbox
-    \sbox\ANDbox{}
+\newcommand{\AND}{\unskip
+    \cleaders\copy\ANDbox\hskip\wd\ANDbox
+    \ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{}
 
-    \placelastupdatedtext
-    \begin{header}
-        \textbf{\fontsize{24 pt}{24 pt}\selectfont Shah Mohd Arhum}
+\placelastupdatedtext
+\begin{header}
+    \textbf{\fontsize{24 pt}{24 pt}\selectfont Shah Mohd Arhum}
 
-        \vspace{0.3 cm}
+    \vspace{0.3 cm}
 
-        \normalsize
-        \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Ghaziabad}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{mailto:mohd.arhum28@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}mohd.arhum28@gmail.com}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://apparentlyarhm.github.io/notaportfolio}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}Personal Site}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/shah-mohd-arhum-57862b286/}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}Shah Mohd. Arhum}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://github.com/apparentlyarhm}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}apparentlyarhm}}%
-    \end{header}
+    \normalsize
+    \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Ghaziabad}%
+    \kern 0.25 cm%
+    \AND%
+    \kern 0.25 cm%
+    \mbox{\hrefWithoutArrow{mailto:mohd.arhum28@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}mohd.arhum28@gmail.com}}%
+    \kern 0.25 cm%
+    \AND%
+    \kern 0.25 cm%
+    \AND%
+    \kern 0.25 cm%
+    \mbox{\hrefWithoutArrow{https://apparentlyarhm.github.io/notaportfolio}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}Personal Site}}%
+    \kern 0.25 cm%
+    \AND%
+    \kern 0.25 cm%
+    \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/shah-mohd-arhum-57862b286/}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}Shah Mohd. Arhum}}%
+    \kern 0.25 cm%
+    \AND%
+    \kern 0.25 cm%
+    \mbox{\hrefWithoutArrow{https://github.com/apparentlyarhm}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}apparentlyarhm}}%
+\end{header}
 
-    \vspace{0.3 cm - 0.3 cm}
+\vspace{0.3 cm - 0.3 cm}
 
-    \section{Education}
+\section{Education}
 
+\begin{twocolentry}        {
 
-
-        
-        \begin{twocolentry}{
-            
-            
         \textit{Sept 2020 – May 2024}}
-            \textbf{SRM Institute of Science and Technolgy, Chennai}
+    \textbf{SRM Institute of Science and Technolgy, Chennai}
 
-            \textit{B.Tech in Computer Science and Engeneering}
-        \end{twocolentry}
+    \textit{B.Tech in Computer Science and Engeneering}
+\end{twocolentry}
 
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item CGPA: 8.46/10.0
-            \end{highlights}
-        \end{onecolentry}
-        
-
-
-    \section{Skillset}
-
-
-
-        
-        \begin{onecolentry}
-            \textbf{Languages:} Python, Java, SQL, JavaScript
-        \end{onecolentry}
-        \vspace{0.10 cm}
-
-
-        \begin{onecolentry}
-            \textbf{Frameworks:} Spring Boot, Spring Batch, Django, Next, React, Angular
-        \end{onecolentry}
-        \vspace{0.10 cm}
-
-        \begin{onecolentry}
-            \textbf{Cloud:} GCP, AWS
-        \end{onecolentry}
-        \vspace{0.10 cm}
-
-        \begin{onecolentry}
-            \textbf{Tools:} Terraform, Docker, Redis, Linux
-        \end{onecolentry}
-        \vspace{0.10 cm}
-
-    
-    \section{Experience}
-
-
-
-        
-        \begin{twocolentry}{
-        \textit{Chennai, TN}    
-            
-        \textit{July 2024 – Present}}
-            \textbf{Junior Software Engineer}
-            
-            \textit{{\hrefWithoutArrow{https://randomwalk.ai/}{\color{black}\hspace*{0.13cm}Randomwalk.ai}}, on premise}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
+\vspace{0.10 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Developed the Preview, Smart Knowledge Base features for chateleon portals
-        \item Developed CRUD backend in Spring Boot for `Gulp` with file upload via AWS S3, token-based authentication (AWS Cognito \& Spring Security), and Docker deployment on EBS.
-        \item Used Spring Reactive Web library to add asynchronous functionalities to chateleon portal
-        \item Implemented Stripe for payments in the chateleon portal
-        \item Added SSO and user profile features for Chateleon portals that handles account auto-merging. 
-        \item Created Python scripts for streamlined table persistence from staging to production databases.
+        \item CGPA: 8.46/10.0
     \end{highlights}
 \end{onecolentry}
 
+\section{Skillset}
 
+\begin{onecolentry}
+    \textbf{Languages:} Python, Java, SQL, JavaScript
+\end{onecolentry}
+\vspace{0.10 cm}
 
-        \vspace{0.2 cm}
+\begin{onecolentry}
+    \textbf{Frameworks:} Spring Boot, Spring Batch, Django, Next, React, Angular
+\end{onecolentry}
+\vspace{0.10 cm}
 
-        \begin{twocolentry}{
-        \textit{Chennai, TN}    
-            
+\begin{onecolentry}
+    \textbf{Cloud:} GCP, AWS
+\end{onecolentry}
+\vspace{0.10 cm}
+
+\begin{onecolentry}
+    \textbf{Tools:} Terraform, Docker, Redis, Linux
+\end{onecolentry}
+\vspace{0.10 cm}
+
+\section{Experience}
+
+\begin{twocolentry}{
+        \textit{Chennai, TN}
+
+        \textit{July 2024 – Present}}
+    \textbf{Junior Software Engineer}
+
+    \textit{{\hrefWithoutArrow{https://randomwalk.ai/}{\color{black}\hspace*{0.13cm}Randomwalk.ai}}, on premise}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Developed the Preview, Smart Knowledge Base features for chateleon portals
+        \item Developed CRUD backend in Spring Boot for `Gulp` with file upload via AWS S3,
+        token-based authentication (AWS Cognito \& Spring Security), and Docker
+        deployment on EBS.
+        \item Used Spring Reactive Web library to add asynchronous functionalities to
+        chateleon portal
+        \item Implemented Stripe for payments in the chateleon portal
+        \item Added SSO and user profile features for Chateleon portals that handles account
+        auto-merging.
+        \item Created Python scripts for streamlined table persistence from staging to
+        production databases.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+        \textit{Chennai, TN}
+
         \textit{April 2024 – June 2024}}
-            \textbf{Software Engineer Intern}
-        
-            \textit{{\hrefWithoutArrow{https://randomwalk.ai/}{\color{black}\hspace*{0.13cm}Randomwalk.ai}}, on premise}
-        \end{twocolentry}
+    \textbf{Software Engineer Intern}
 
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Designed and built multiple prototypes for "Gulp"- a local drinks business based in Chennai using Material You Design and React Native \& Flutter
-                \item Developed Authentication flows and datastore in Firestore, with non-live testing APIs deployed on Compute Engine (GCP)
-                \item Developed Notification Backend APIs for \textit{\href{https://chateleon.com}{Chateleon}} portals using Spring Boot and Email alerts using Thymeleaf
-            \end{highlights}
-        \end{onecolentry}
+    \textit{{\hrefWithoutArrow{https://randomwalk.ai/}{\color{black}\hspace*{0.13cm}Randomwalk.ai}}, on premise}
+\end{twocolentry}
 
-    
-    \section{Personal projects}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Designed and built multiple prototypes for "Gulp"- a local drinks business
+        based in Chennai using Material You Design and React Native \& Flutter
+        \item Developed Authentication flows and datastore in Firestore, with non-live
+        testing APIs deployed on Compute Engine (GCP)
+        \item Developed Notification Backend APIs for
+        \textit{\href{https://chateleon.com}{Chateleon}} portals using Spring Boot and
+        Email alerts using Thymeleaf
+    \end{highlights}
+\end{onecolentry}
 
-        \begin{twocolentry}{
-          
+\section{Personal projects}
+
+\begin{twocolentry}        {
+
         \textit{\href{https://github.com/apparentlyarhm/validateapp}{github}}}
-            \textbf{Django/Next based whitelist tool for firewalls on Google Cloud Platform}
-        \end{twocolentry}
-        \begin{onecolentry}
-            \textit{App Engine, Service Accounts, Secrets API, Django, NextJS}
+    \textbf{Django/Next based whitelist tool for firewalls on Google Cloud Platform}
+\end{twocolentry}
+\begin{onecolentry}
+    \textit{App Engine, Service Accounts, Secrets API, Django, NextJS}
 
-        \end{onecolentry}
+\end{onecolentry}
 
-        \vspace{0.2 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item {Made a simple website that takes in Users public IP and adds it to the GCP Firewall, effectively granting access to a resource - a game server in this case}
-                \item {Achieved using Secret Manager APIs, Service Accounts and IAM permissions combined with custom APIs made in Django, Frontend made in NextJS}
+\vspace{0.2 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item {Made a simple website that takes in Users public IP and adds it to the GCP Firewall, effectively granting access to a resource - a game server in this case}
+        \item {Achieved using Secret Manager APIs, Service Accounts and IAM permissions combined with custom APIs made in Django, Frontend made in NextJS}
 
-            \end{highlights}
-        \end{onecolentry}
+    \end{highlights}
+\end{onecolentry}
 
+\vspace{0.2 cm}
 
-        \vspace{0.2 cm}
+\begin{twocolentry}        {
 
-        \begin{twocolentry}{
-            
-            
-            \textit{}}
-                \textbf{Custom Game Server on GCE}
-            \end{twocolentry}
+        \textit{}}
+    \textbf{Custom Game Server on GCE}
+\end{twocolentry}
 
-        \begin{onecolentry}
-        \textit{Compute Engine, Cloud Storage Buckets, Cloud Functions, Linux}
-        \end{onecolentry}
-        \vspace{0.2 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item {Used tools like Compute Engine, CRON, TMUX to host and maintain a game server with regular Backups}
-                \item Wrote VM starter scripts using bash as well as Terraform scripts for all the infra stuff
-            \end{highlights}
-        \end{onecolentry}
+\begin{onecolentry}
+    \textit{Compute Engine, Cloud Storage Buckets, Cloud Functions, Linux}
+\end{onecolentry}
+\vspace{0.2 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item {Used tools like Compute Engine, CRON, TMUX to host and maintain a game server with regular Backups}
+        \item Wrote VM starter scripts using bash as well as Terraform scripts for all the
+        infra stuff
+    \end{highlights}
+\end{onecolentry}
 
-
-        \vspace{0.2 cm}
-
+\vspace{0.2 cm}
 
 \end{document}
