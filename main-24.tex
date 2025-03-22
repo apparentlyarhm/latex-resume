@@ -114,7 +114,7 @@
     \setcolumnwidth{\fill, 4.5 cm}
     \begin{paracol}{2}
 }{
-    \switchcolumn \raggedleft \secondColumn
+    \switchcolumn\raggedleft\secondColumn
     \end{paracol}
     \endonecolentry
 } % new environment for two column entries
@@ -159,23 +159,23 @@
 
     \normalsize
     \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Ghaziabad}%
-    \kern 0.25 cm%
+    \kern0.25 cm%
     \AND%
-    \kern 0.25 cm%
+    \kern0.25 cm%
     \mbox{\hrefWithoutArrow{mailto:mohd.arhum28@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}mohd.arhum28@gmail.com}}%
-    \kern 0.25 cm%
+    \kern0.25 cm%
     \AND%
-    \kern 0.25 cm%
+    \kern0.25 cm%
     \AND%
-    \kern 0.25 cm%
+    \kern0.25 cm%
     \mbox{\hrefWithoutArrow{https://apparentlyarhm.github.io/notaportfolio}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}Personal Site}}%
-    \kern 0.25 cm%
+    \kern0.25 cm%
     \AND%
-    \kern 0.25 cm%
+    \kern0.25 cm%
     \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/shah-mohd-arhum-57862b286/}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}Shah Mohd. Arhum}}%
-    \kern 0.25 cm%
+    \kern0.25 cm%
     \AND%
-    \kern 0.25 cm%
+    \kern0.25 cm%
     \mbox{\hrefWithoutArrow{https://github.com/apparentlyarhm}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}apparentlyarhm}}%
 \end{header}
 
@@ -183,7 +183,7 @@
 
 \section{Education}
 
-\begin{twocolentry}            {
+\begin{twocolentry}                    {
 
         \textit{Sept 2020 – May 2024}}
     \textbf{SRM Institute of Science and Technolgy, Chennai}
@@ -239,17 +239,14 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Developed the Preview, Smart Knowledge Base features for chateleon portals
-        \item Developed CRUD backend in Spring Boot for `Gulp` with file upload via AWS S3,
-        token-based authentication (AWS Cognito \& Spring Security), and containerised
-        deployment on EBS.
-        \item Used Spring Reactive Web library to add asynchronous functionalities to
-        chateleon portal
+        \item Implemented AI agent for with configurable knowledge base that support User Feedback Tracking and Lead Generation for businesses
+        \item Built a Spring Boot CRUD backend for Gulp, featuring AWS S3 file uploads, token-based authentication (AWS Cognito \& Spring Security), and containerized deployment on AWS Elastic Beanstalk with CI/CD
+        \item Implemented asynchronous functionalities using Spring Reactive Core. 
         \item Integrated Stripe and Razorpay SDKs in the chateleon portal
         \item Added SSO and user profile features for Chateleon portals that handles account
-        auto-merging.
-        \item Created Python and SQL scripts for streamlined table persistence from staging
-        to production databases.
+        auto-merging
+        \item Created Python and SQL scripts for staging-to-production table persistence and maintenance.
+        \item Conducted code reviews to enhance maintainability and readability.
     \end{highlights}
 \end{onecolentry}
 
@@ -267,7 +264,7 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Designed and built multiple prototypes for "Gulp"- a local drinks business
+        \item Designed and built multiple prototypes for `Gulp'- a local drinks business
         based in Chennai using Material You Design and React Native \& Flutter
         \item Developed Authentication flows and datastore in Firestore, with non-live
         testing APIs deployed on Compute Engine (GCP)
@@ -279,7 +276,7 @@
 
 \section{Personal projects}
 
-\begin{twocolentry}            {
+\begin{twocolentry}                    {
 
         \textit{\href{https://github.com/apparentlyarhm/validateapp}{github}}}
     \textbf{Django/Next based whitelist tool for firewalls on Google Cloud Platform}
@@ -300,7 +297,7 @@
 
 \vspace{0.2 cm}
 
-\begin{twocolentry}            {
+\begin{twocolentry}                    {
 
         \textit{}}
     \textbf{Custom Game Server on GCE}
@@ -313,7 +310,7 @@
 \begin{onecolentry}
     \begin{highlights}
         \item {Used tools like Compute Engine, CRON, TMUX to host and maintain a game server with regular Backups}
-        \item Wrote VM starter scripts using bash as well as Terraform scripts for all the
+        \item Wrote auto configuration scripts using bash as well as Terraform scripts for all the
         infra stuff
     \end{highlights}
 \end{onecolentry}
