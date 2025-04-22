@@ -131,7 +131,7 @@
         \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
     ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in March 2025}\hspace{\widthof{Last updated in September 2024}}
+        \small\color{gray}\textit{Last updated in April 2025}\hspace{\widthof{Last updated in September 2024}}
     }}}%
   }%
 }%
@@ -240,12 +240,10 @@
 \begin{onecolentry}
     \begin{highlights}
         \item Implemented AI agent for with configurable knowledge base that support User Feedback Tracking and Lead Generation for businesses
-        \item Built a Spring Boot CRUD backend for Gulp, featuring AWS S3 file uploads, token-based authentication (AWS Cognito \& Spring Security), and containerized deployment on AWS Elastic Beanstalk with CI/CD
-        \item Implemented asynchronous functionalities using Spring Reactive Core. 
-        \item Integrated Stripe and Razorpay SDKs in the chateleon portal
-        \item Added SSO and user profile features for Chateleon portals that handles account
-        auto-merging
-        \item Created Python and SQL scripts for staging-to-production table persistence and maintenance.
+        \item Built Spring Boot CRUD API servers with S3 uploads, token-based authentication, and CI/CD on Elastic Beanstalk.
+        \item Added async features using Spring Reactive Core and integrated Stripe/Razorpay SDKs.
+        \item Developed SSO and auto-merging user profiles for Chateleon portals.
+        \item Wrote Python/SQL scripts for staging-to-production table maintenance.
         \item Conducted code reviews to enhance maintainability and readability.
     \end{highlights}
 \end{onecolentry}
@@ -264,7 +262,7 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Designed and built multiple prototypes for `Gulp'- a local drinks business
+        \item Designed and built multiple prototypes for a local drinks business
         based in Chennai using Material You Design and React Native \& Flutter
         \item Developed Authentication flows and datastore in Firestore, with non-live
         testing APIs deployed on Compute Engine (GCP)
@@ -276,21 +274,21 @@
 
 \section{Personal projects}
 
-\begin{twocolentry}                    {
+\begin{twocolentry}{
 
-        \textit{\href{https://github.com/apparentlyarhm/minecraft-terraform}{github}}}
-    \textbf{Spring Boot/Next based whitelist tool for firewalls on Google Cloud Platform}
+        \textit{\href{https://github.com/apparentlyarhm/minecraft-terraform}{github}}\\
+        \textit{Ongoing}}
+    \textbf{Self-Hosted Minecraft Server on GCP with utility applications}\\
+    \textit{Cloud Run, Service Accounts, Powershell, Spring Boot, NextJS, Terraform, Docker}
 \end{twocolentry}
-\begin{onecolentry}
-    \textit{Cloud Run, Service Accounts, Powershell, Spring Boot, NextJS}
-
-\end{onecolentry}
 
 \vspace{0.2 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item {Developed a website to add user IPs to GCP Firewall, granting access to a game server}
-        \item {Built with Spring Boot APIs, Next.js frontend, and CI/CD on Cloud Run via Powershell}    \end{highlights}
+        \item{ Developing a self-configurable Minecraft server on GCP with a web interface for server status and IP whitelisting}
+        \item {Implemented a Spring Boot backend for the web interface, with a NextJS frontend}
+        \item {Used Terraform to create all necessary resources- VMs, Cloud Run, Service Accounts}
+    \end{highlights}
 \end{onecolentry}
 
 \vspace{0.2 cm}
@@ -298,17 +296,16 @@
 \begin{twocolentry}                    {
 
         \textit{}}
-    \textbf{Custom Game Server on GCE}
+    \textbf{Spoti-proxy}
 \end{twocolentry}
 
 \begin{onecolentry}
-    \textit{Compute Engine, Cloud Storage Buckets, Cloud Functions, Linux, Terraform}
+    \textit{Express, Docker, GCP}
 \end{onecolentry}
 \vspace{0.2 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item {Hosted and maintained a game server using Compute Engine, CRON, and TMUX with regular backups}
-        \item {Automated cloud resource configuration with bash and Terraform scripts}        required cloud resources
+        \item {Developed a proxy server to abstract Spotify's token refresh and utilise all API endpoints easily}
     \end{highlights}
 \end{onecolentry}
 
