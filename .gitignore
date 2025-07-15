@@ -30,3 +30,12 @@
 # Log created by Adobe Reader
 C:\\nppdf32Log\\debuglog.txt
 
+# new additions on 15/7/25
+
+# venv
+.venv
+
+# gcp service account credentials 
+credentials.json
+
+.env
