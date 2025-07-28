@@ -79,22 +79,30 @@ right=0.5in]{geometry}              % specify right page margin
 
 % projects section
 \section*{Projects}
-\textbf{Self-Hosted Minecraft Server on GCP with utility applications} \hfill \href{https://github.com/apparentlyarhm/minecraft-terraform}{\textit{Github}} \\
+
+\textbf{Minecraft Server Utility Web Console} \hfill \href{https://mccon.arhm.dev}{\textit{live link}} \\
 \vspace{-9pt}
 \begin{itemize}
-    \item{ Developing a self-configurable Minecraft server on GCP with a web interface for server status and IP whitelisting}
-    \item {Implemented a Spring Boot backend for the web interface, with a NextJS frontend, secured with GitHub OAuth}
-    \item {Used Terraform to create all necessary resources- VMs, Cloud Run, Service Accounts}
-\end{itemize}
+    \item{Built a full-stack dashboard for a Minecraft server on GCP to display player stats, VM status, mod list, and more}
+    \item{Implemented admin operations (e.g. firewall purge) with authentication via GitHub OAuth and custom JWTs}
+    \item{Developed a Next.js frontend integrated with a Spring Boot backend, deployed on GCP Cloud Run}
+\end{itemize}   
+
+\textbf{Infrastructure for secure Minecraft Server} \hfill \href{https://github.com/apparentlyarhm/minecraft-terraform}{\textit{Github}} \\
+\vspace{-9pt}
+\begin{itemize}
+    \item{Used Terraform to provision Compute Engine VMs, Cloud Run services, Artifact Registry, and firewall rules}
+    \item{Automated Minecraft server and mod setup with Bash scripts on first boot}
+    \item{Secured GCP resources using IAM roles and service accounts}
+    \end{itemize}
 
 \textbf{Spoti-proxy} \hfill \href{https://github.com/apparentlyarhm/spotify-proxy}{\textit{Github}} \\
 \vspace{-9pt}
 \begin{itemize}
     \item {Developed a proxy server to abstract Spotify's token refresh and utilise all API endpoints easily in my personal website}
-
 \end{itemize}
 
-% alternate formatting for projects section
+% alternate formatting for projects section once experience section is more- we wont need to describe our projects as much
 % \section*{Projects}
 % \begin{itemize}
 %   \item \textbf{QuantSoftware Toolkit:} Open source Python library for data analysis and machine learning for finance
