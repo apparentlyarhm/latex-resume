@@ -9,7 +9,14 @@ right=0.5in]{geometry}              % specify right page margin
 \usepackage[T1]{fontenc}            % output encoding
 \usepackage[utf8]{inputenc}         % input encoding
 \usepackage{enumitem}               % enable lists for bullet points: itemize and \item
-\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage[hidelinks,
+    pdfauthor={Shah Mohd Arhum},
+    pdftitle={Arhum's Resume!},
+    pdfsubject={Resume},
+    pdfkeywords={resume, software engineer, GCP, Terraform, Java, Spring Boot, Spring Batch, AWS},
+    pdfproducer={LaTeX},
+    pdfcreator={pdflatex}
+]{hyperref}    % format hyperlinks
 \usepackage{titlesec}               % enable section title customization
 \raggedright                        % disable text justification
 \pagestyle{empty}                   % disable page numbering
@@ -76,8 +83,6 @@ right=0.5in]{geometry}              % specify right page margin
 % \vspace{-9pt}
 
 \vspace{-18.5pt}
-
-% projects section
 \section*{Projects}
 
 \textbf{Minecraft Server Utility Web Console} \hfill \href{https://mccon.arhm.dev}{\textit{live link}} \\
