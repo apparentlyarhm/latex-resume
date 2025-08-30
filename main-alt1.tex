@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}       % set main text size
+\documentclass[12pt]{article}       % set main text size
 \usepackage[letterpaper,                % set paper size to letterpaper. change to a4paper for resumes outside of North America
 top=0.5in,                          % specify top page margin
 bottom=0.5in,                       % specify bottom page margin
@@ -47,7 +47,7 @@ right=0.5in]{geometry}              % specify right page margin
 
 % skills section
 \section*{Skills}
-\textbf{Programming Languages:} Python, Java, Javascript \\
+\textbf{Programming Languages:} Python, Java, Javascript, Go \\
 \textbf{Frameworks:} Spring Boot, Spring Batch, Django, FastAPI, Flask NextJS, Angular, Mockito \\
 \textbf{Cloud:} GCP, AWS \\
 \textbf{Databases:} MySQL, Redis \\
@@ -83,38 +83,39 @@ right=0.5in]{geometry}              % specify right page margin
 % \vspace{-9pt}
 
 \vspace{-18.5pt}
-\section*{Projects}
 
-\textbf{Minecraft Server Utility Web Console} \hfill \href{https://mccon.arhm.dev}{\textit{live link}} \\
-\vspace{-9pt}
-\begin{itemize}
-    \item{Built a full-stack dashboard for a Minecraft server on GCP to display player stats, VM status, mod list, and more}
-    \item{Implemented admin operations (e.g. firewall purge) with authentication via GitHub OAuth and custom JWTs}
-    \item{Developed a Next.js frontend integrated with a Spring Boot backend, deployed on GCP Cloud Run}
-\end{itemize}   
+% \section*{Projects}
+% \textbf{Minecraft Server Utility Web Console} \hfill \href{https://mccon.arhm.dev}{\textit{live link}} \\
+% \vspace{-9pt}
+% \begin{itemize}
+%     \item{Built a full-stack dashboard for a Minecraft server on GCP to display player stats, VM status, mod list, and more}
+%     \item{Implemented admin operations (e.g. firewall purge) with authentication via GitHub OAuth and custom JWTs}
+%     \item{Developed a Next.js frontend integrated with a Spring Boot backend, deployed on GCP Cloud Run}
+% \end{itemize}   
 
-\textbf{Infrastructure for secure Minecraft Server} \hfill \href{https://github.com/apparentlyarhm/minecraft-terraform}{\textit{Github}} \\
-\vspace{-9pt}
-\begin{itemize}
-    \item{Used Terraform to provision Compute Engine VMs, Cloud Run services, Artifact Registry, and firewall rules}
-    \item{Automated Minecraft server and mod setup with Bash scripts on first boot}
-    \item{Secured GCP resources using IAM roles and service accounts}
-    \end{itemize}
+% \textbf{Infrastructure for secure Minecraft Server} \hfill \href{https://github.com/apparentlyarhm/minecraft-terraform}{\textit{Github}} \\
+% \vspace{-9pt}
+% \begin{itemize}
+%     \item{Used Terraform to provision Compute Engine VMs, Cloud Run services, Artifact Registry, and firewall rules}
+%     \item{Automated Minecraft server and mod setup with Bash scripts on first boot}
+%     \item{Secured GCP resources using IAM roles and service accounts}
+%     \end{itemize}
 
-\textbf{Spoti-proxy} \hfill \href{https://github.com/apparentlyarhm/spotify-proxy}{\textit{Github}} \\
-\vspace{-9pt}
-\begin{itemize}
-    \item {Developed a proxy wrapper that abstracts all refresh token logic and utilise all API endpoints from Spotify, GitHub, Steam easily in my personal website}
-\end{itemize}
+% \textbf{Spoti-proxy} \hfill \href{https://github.com/apparentlyarhm/spotify-proxy}{\textit{Github}} \\
+% \vspace{-9pt}
+% \begin{itemize}
+%     \item {Developed a proxy wrapper that abstracts all refresh token logic and utilise all API endpoints from Spotify, GitHub, Steam easily in my personal website}
+%     \item {Ported the app in Go for better CI/CD times and cold start times, and also for hands on experience with Go}
+% \end{itemize}
 
 % alternate formatting for projects section once experience section is more- we wont need to describe our projects as much
-% \section*{Projects}
-% \begin{itemize}
-%   \item \textbf{QuantSoftware Toolkit:} Open source Python library for data analysis and machine learning for finance
-%   \item \textbf{GitHub Visualization:} Data visualization of Git Log data using D3 to analyze project trends over time
-%   \item \textbf{Recommendation System:} Music and movie recommender systems using collaborative filtering on public datasets
-%   \item \textbf{Mac Setup:} Book that gives step by step instructions on setting up developer environment on Mac OS
-% \end{itemize}
+\section*{Projects}
+\begin{itemize}
+  \item \textbf{Minecraft Server Utility Web Console:} Full-stack dashboard on GCP with Next.js + Spring Boot for server stats, admin ops (via GitHub OAuth + JWT), and mod management \href{https://mccon.arhm.dev}{\textit{[live link]}}
+  \item \textbf{Infrastructure for Secure Minecraft Server:} Terraform + Bash automation to provision Compute Engine, Cloud Run, Artifact Registry, and secure IAM-based access \href{https://github.com/apparentlyarhm/minecraft-terraform}{\textit{[GitHub]}}
+  \item \textbf{Spoti-proxy:} Proxy service for Spotify/GitHub/Steam APIs handling refresh tokens, ported to Go for faster CI/CD and cold starts \href{https://github.com/apparentlyarhm/spotify-proxy}{\textit{[GitHub]}}
+\end{itemize}
+
 
 \vspace{-18.5pt}
 
