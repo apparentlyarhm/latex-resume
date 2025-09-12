@@ -35,7 +35,7 @@ C:\\nppdf32Log\\debuglog.txt
 # venv
 .venv
 
-# gcp service account credentials 
-credentials.json
+# gcp service account credentials or tokens or client ids/secrets
+*.json
 
 .env
