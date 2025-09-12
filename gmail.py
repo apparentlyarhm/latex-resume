@@ -22,7 +22,7 @@ def get_gmail_service():
     creds = None
     if os.path.exists('token.json'):
         print("Loading credentials from token.json")
-        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+        creds = Credentials.from_authorized_user_file('token.json', SCOPES) # this contains tokens
     
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
@@ -30,7 +30,7 @@ def get_gmail_service():
             creds.refresh(Request())
         else: 
             print("Fetching new tokens...")
-            flow = InstalledAppFlow.from_client_secrets_file('cred.json', SCOPES)
+            flow = InstalledAppFlow.from_client_secrets_file('cred.json', SCOPES) # this contains secrets we create on gcp console
             creds = flow.run_local_server(port=0)
             with open('token.json', 'w') as token:
                 token.write(creds.to_json())
