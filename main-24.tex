@@ -18,12 +18,13 @@
 \usepackage{enumitem} % for customizing lists
 \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
-\usepackage[
-    pdftitle={Arhum's CV},
+\usepackage[hidelinks,
     pdfauthor={Shah Mohd Arhum},
-    pdfcreator={LaTeX with RenderCV},
-    colorlinks=true,
-    urlcolor=primaryColor
+    pdftitle={Arhum's Resume!},
+    pdfsubject={Resume},
+    pdfkeywords={resume, software engineer, GCP, Terraform, Java, Spring Boot, Spring Batch, AWS},
+    pdfproducer={LaTeX},
+    pdfcreator={pdflatex}
 ]{hyperref} % for links, metadata and bookmarks
 \usepackage[pscoord]{eso-pic} % for floating text on the page
 \usepackage{calc} % for calculating lengths
@@ -131,7 +132,7 @@
         \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
     ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in May 2025}\hspace{\widthof{Last updated in May 2025}}
+        \small\color{gray}\textit{Last updated in Nov 2025}\hspace{\widthof{Last updated in May 2025}}
     }}}%
   }%
 }%
@@ -172,7 +173,7 @@
     \kern0.25 cm%
     \AND%
     \kern0.25 cm%
-    \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/shah-mohd-arhum-57862b286/}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}Shah Mohd. Arhum}}%
+    \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/shaharhum/}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}Shah Mohd. Arhum}}%
     \kern0.25 cm%
     \AND%
     \kern0.25 cm%
@@ -180,6 +181,88 @@
 \end{header}
 
 \vspace{0.3 cm - 0.3 cm}
+
+\section{Skillset}
+
+\begin{onecolentry}
+    \textbf{Programming Languages:} Python, Java, JavaScript, Go
+\end{onecolentry}
+\vspace{0.10cm}
+
+\begin{onecolentry}
+    \textbf{Frameworks:} Spring Boot, Spring Batch, Django, FastAPI, Flask, NextJS, Angular, Mockito
+\end{onecolentry}
+\vspace{0.10cm}
+
+\begin{onecolentry}
+    \textbf{Cloud:} GCP, AWS
+\end{onecolentry}
+\vspace{0.10cm}
+
+\begin{onecolentry}
+    \textbf{Databases:} MySQL, Redis
+\end{onecolentry}
+\vspace{0.10cm}
+
+\begin{onecolentry}
+    \textbf{DevOps and Infrastructure:} Terraform, Docker, Linux
+\end{onecolentry}
+\vspace{0.10cm}
+
+
+\section{Experience}
+
+\begin{twocolentry}{
+        \textit{Chennai, TN}
+
+        \textit{July 2024 – Present}}
+    \textbf{Junior Software Engineer}
+
+    \textit{{\hrefWithoutArrow{https://randomwalk.ai/}{\color{black}\hspace*{0.13cm}Random Walk AI}}}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+    \item Built an AI agent system for businesses with a configurable knowledge base for lead generation and feedback tracking, enabling custom conversational workflows and increasing qualified leads by 25\%
+    \item Architected a scalable CRM integration service using Spring Batch and Amazon SQS, handling OAuth-secured multi-CRM data flows; enabled seamless lead ingestion into external CRMs
+    \item Prototyped a chatbot-based assesment tool using LangGraph with real-time text to speech capabilities with cloned voices, with locally hosted Models like F5-TTS and LipSync with EchoMimic using FastAPI and NextJS
+    \item Delivered high-uptime production-ready API server in Spring Boot, with AWS Cognito authentication, S3 file uploads, and CI/CD with GitHub Actions and deployment on Elastic Beanstalk    
+    \item Optimized backend responsiveness by introducing asynchronous processing with Spring Reactive Core 
+    \item Built automation scripts in Python and SQL to handle data migration and integrity checks between staging and production environments, reducing manual overhead and error rate during releases
+    \item Reviewed peer code for readability, modularity, and testability
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+        \textit{Chennai, TN}
+
+        \textit{April 2024 – June 2024}}
+    \textbf{Software Engineer Intern}
+
+    \textit{{\hrefWithoutArrow{https://randomwalk.ai/}{\color{black}\hspace*{0.13cm}Random Walk AI}}}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Designed and built multiple prototypes for a local drinks business
+        based in Chennai using Material You Design and React Native \& Flutter
+        \item Developed Notification Backend APIs for
+        \textit{\href{https://chateleon.com}{Chateleon}} portals using Spring Boot and
+        Email alerts using Thymeleaf
+    \end{highlights}
+\end{onecolentry}
+
+\section{Personal projects}
+\begin{itemize}
+  \item \textbf{Minecraft Server Utility Web Console:} Built a server control panel on GCP with Next.js + Spring Boot for server stats, admin ops (via GitHub OAuth + custom JWT), and mod management \href{https://mccon.arhm.dev}{\textit{[live link]}}
+  \item \textbf{Infrastructure for Secure Minecraft Server:} Terraform + Bash automation to provision Compute Engine, Cloud Run, Artifact Registry, Firewall and setup IAM \href{https://github.com/apparentlyarhm/minecraft-terraform}{\textit{[GitHub]}}
+  \item \textbf{Spoti-proxy:} Proxy service for Spotify/GitHub/Steam APIs handling refresh tokens, ported to Go for faster CI/CD and cold starts \href{https://github.com/apparentlyarhm/spotify-proxy}{\textit{[GitHub]}}
+\end{itemize}
+
 
 \section{Education}
 
@@ -195,115 +278,6 @@
 \begin{onecolentry}
     \begin{highlights}
         \item CGPA: 8.46/10.0
-    \end{highlights}
-\end{onecolentry}
-
-\section{Skillset}
-
-\begin{onecolentry}
-    \textbf{Languages:} Python, Java, SQL, JavaScript
-\end{onecolentry}
-\vspace{0.10 cm}
-
-\begin{onecolentry}
-    \textbf{Frameworks:} Spring Boot, Spring Batch, Django, Next, React, Angular
-\end{onecolentry}
-\vspace{0.10 cm}
-
-\begin{onecolentry}
-    \textbf{Cloud:} GCP, AWS
-\end{onecolentry}
-\vspace{0.10 cm}
-
-\begin{onecolentry}
-    \textbf{Tools:} Terraform, Docker, Linux
-\end{onecolentry}
-\vspace{0.10 cm}
-
-\begin{onecolentry}
-    \textbf{Databases:} MySQL, Redis, DynamoDB
-\end{onecolentry}
-\vspace{0.10 cm}
-
-\section{Experience}
-
-\begin{twocolentry}{
-        \textit{Chennai, TN}
-
-        \textit{July 2024 – Present}}
-    \textbf{Junior Software Engineer}
-
-    \textit{{\hrefWithoutArrow{https://randomwalk.ai/}{\color{black}\hspace*{0.13cm}Randomwalk.ai}}, on premise}
-\end{twocolentry}
-
-\vspace{0.10 cm}
-\begin{onecolentry}
-    \begin{highlights}
-    \item Designed and implemented an AI agent system with a configurable knowledge base to support lead generation and user feedback tracking for businesses, enabling custom conversational workflows that boosted qualified lead capture by 25\%.
-    \item Engineered a scalable CRM integration service using Spring Batch and Amazon SQS, handling OAuth-secured multi-CRM data flows; enabled seamless lead ingestion into external CRMs
-    \item Developed production-ready API server in Spring Boot with file uploads to S3, JWT-based authentication, and CI/CD pipelines on Elastic Beanstalk, ensuring reliable uptime for internal tools.
-    \item Optimized backend responsiveness by introducing asynchronous processing with Spring Reactive Core 
-    \item Wrote automation scripts in Python and SQL to handle data migration and integrity checks between staging and production environments, reducing manual overhead and error rate during releases.
-    \item Led peer code reviews focused on readability, modularity, and testability
-    \end{highlights}
-\end{onecolentry}
-
-\vspace{0.2 cm}
-
-\begin{twocolentry}{
-        \textit{Chennai, TN}
-
-        \textit{April 2024 – June 2024}}
-    \textbf{Software Engineer Intern}
-
-    \textit{{\hrefWithoutArrow{https://randomwalk.ai/}{\color{black}\hspace*{0.13cm}Randomwalk.ai}}, on premise}
-\end{twocolentry}
-
-\vspace{0.10 cm}
-\begin{onecolentry}
-    \begin{highlights}
-        \item Designed and built multiple prototypes for a local drinks business
-        based in Chennai using Material You Design and React Native \& Flutter
-        \item Developed Notification Backend APIs for
-        \textit{\href{https://chateleon.com}{Chateleon}} portals using Spring Boot and
-        Email alerts using Thymeleaf
-    \end{highlights}
-\end{onecolentry}
-
-\section{Personal projects}
-
-\begin{twocolentry}{
-
-        \textit{\href{https://github.com/apparentlyarhm/minecraft-terraform}{github}}\\
-        \textit{Ongoing}}
-    \textbf{Self-Hosted Minecraft Server on GCP with utility applications}\\
-    \textit{Cloud Run, Service Accounts, Powershell, Spring Boot, NextJS, Terraform, Docker}
-\end{twocolentry}
-
-\vspace{0.2 cm}
-\begin{onecolentry}
-    \begin{highlights}
-        \item{ Developing a self-configurable Minecraft server on GCP with a web interface for server status and IP whitelisting}
-        \item {Implemented a Spring Boot backend for the web interface, with a NextJS frontend}
-        \item {Used Terraform to create all necessary resources- VMs, Cloud Run, Service Accounts}
-    \end{highlights}
-\end{onecolentry}
-
-\vspace{0.2 cm}
-
-\begin{twocolentry}                                    {
-
-        \textit{}}
-    \textbf{Spoti-proxy}
-\end{twocolentry}
-
-\begin{onecolentry}
-    \textit{Express, Docker, GCP}
-\end{onecolentry}
-\vspace{0.2 cm}
-\begin{onecolentry}
-    \begin{highlights}
-        \item {Developed a proxy server to abstract Spotify's token refresh and utilise all API endpoints easily}
     \end{highlights}
 \end{onecolentry}
 
