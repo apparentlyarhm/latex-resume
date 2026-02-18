@@ -3,7 +3,9 @@ import itertools
 import threading
 import time
 import sys
+import shutil
 
+from pathlib import Path
 from datetime import datetime
 from dotenv import load_dotenv
 from google.oauth2 import service_account
@@ -42,38 +44,52 @@ SERVICE_ACCOUNT_FILE = "credentials.json"
 
 FILE_ID = os.getenv('FILE_ID')
 PDF_PATH = os.getenv('PDF_PATH')
+HDD_PATH = os.getenv('HDD_PATH')
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
 
-def update_drive_file(file_id, file_path, service_account_file):
+# separated this if in case this has to be reused in the future
+def name_gen(file_path: str):
+    timestamp = datetime.now().strftime('%Y-%m-%d_%H%M')
+    base = os.path.splitext(os.path.basename(file_path))[0]
+    
+    return f"{base}_{timestamp}.pdf"
+
+
+def gdrive_sync(file_id, file_path, service_account_file, name):
     creds = service_account.Credentials.from_service_account_file(
         service_account_file, 
         scopes=SCOPES
     )
 
     service = build('drive', 'v3', credentials=creds)
-
-    timestamp = datetime.now().strftime('%Y-%m-%d_%H%M')
-    new_name = f"{os.path.splitext(os.path.basename(file_path))[0]}_{timestamp}.pdf"
-
     media = MediaFileUpload(file_path, mimetype='application/pdf', resumable=True)
 
     updated_file = service.files().update(
         fileId=file_id,
         media_body=media,
-        body={'name': new_name}
+        body={'name': name}
     ).execute()
 
     print(f"File updated: {updated_file['name']} ({updated_file['id']})")
 
+def hdd_sync(hdd_path, pdf_path):
+    dest = Path(hdd_path) / pdf_path
+    shutil.copy2(pdf_path, dest)
+
+    print(f"HDD mirrored: {dest}")
+
 if __name__ == '__main__':
-    if not SERVICE_ACCOUNT_FILE or not FILE_ID or not PDF_PATH:
+    if not SERVICE_ACCOUNT_FILE or not FILE_ID or not PDF_PATH or not HDD_PATH:
         raise ValueError("Missing environment variables. Check your .env file.")
     
     loader = LoadingAnimation("Working")
     loader.start()
 
+    ver = name_gen(PDF_PATH)
+
     time.sleep(2)
-    # update_drive_file(FILE_ID, PDF_PATH, SERVICE_ACCOUNT_FILE)
+    gdrive_sync(FILE_ID, PDF_PATH, SERVICE_ACCOUNT_FILE, ver)
+    hdd_sync(HDD_PATH, PDF_PATH)
 
     loader.stop()
