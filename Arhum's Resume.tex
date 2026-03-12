@@ -55,7 +55,7 @@
 \makeatletter
 \let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
 \patchcmd{\ps@customFooterStyle}{\thepage}{
-    \color{gray}\textit{\small Shah Mohd Arhum - Page \thepage{} of \pageref*{LastPage} | Last updated in Feb 2026}
+    \color{gray}\textit{\small Shah Mohd Arhum - Page \thepage{} of \pageref*{LastPage} | Last updated in Mar 2026}
 }{}{} % replace number by desired string
 \makeatother
 \pagestyle{customFooterStyle}
@@ -221,12 +221,12 @@
     \begin{highlights}
     \item Built an AI agent system for businesses with a \textbf{configurable knowledge base} for lead generation and feedback tracking, enabling \textbf{custom conversational workflows} and \textbf{increasing qualified leads by 25\%}
     \item Architected a \textbf{scalable CRM integration service} using Spring Batch and Amazon SQS, handling OAuth-secured \textbf{multi-CRM data flows}; enabled seamless lead ingestion into external CRMs with \textbf{10+ CRM providers across all customers}
-    \item \textbf{Prototyped a chatbot-based assesment tool} using LangGraph with \textbf{real-time} text to speech capabilities with cloned voices, with locally \textbf{hosted Models like F5-TTS and LipSync with EchoMimic} using FastAPI and NextJS
-    \item \textbf{Delivered high-uptime} API server in Spring Boot, with AWS Cognito authentication, S3 file uploads, MySQL Database with Hibernate ORM, CI/CD with GitHub Actions and deployment on Elastic Beanstalk    
-    \item Engineered \textbf{smart, automated batch jobs} using Spring Batch for user-provided domain auto-scraping based on custom configurations and schedule, to generate and keep customer AI Agent knowledge bases up-to-date, with \textbf{monitoring and alerting}.
+    \item \textbf{Prototyped an AI chatbot-based assesment tool} using LangGraph with \textbf{real-time} TTS (sub 1.5s) capabilities with cloned voices, with locally \textbf{hosted Models like F5-TTS and LipSync with EchoMimic} using FastAPI and NextJS
+    \item \textbf{Delivered a 99.9\% uptime production-grade} API server in Spring Boot, with AWS Cognito authentication, S3 file uploads, MySQL Database with Hibernate ORM, CI/CD with GitHub Actions and deployment on Elastic Beanstalk    
+    \item Engineered \textbf{smart, automated batch jobs} using Spring Batch for user-provided domain auto-scraping based on custom configurations and schedule, to generate and keep customer AI Agent knowledge bases up-to-date, with \textbf{monitoring and alerting}, boosting \textbf{feature adoption by 40\%} across all customers
     \item \textbf{Refactored and Optimized} backend responsiveness by utilisng Spring Reactive Core for \textbf{async tasks}
     \item \textbf{Improved test coverage of critical workflows} by implementing branch-modeled automated tests utilising \textbf{Mockito and Junit Jupiter} and enforcing them in CI/CD.
-    \item Conducted peer code reviews for \textbf{readability, modularity, and testability} with a focus on \textbf{TDD}
+    \item Conducted peer code reviews across a 5-engineer team for \textbf{readability, modularity, and testability} with focus on \textbf{TDD}
     \end{highlights}
 \end{onecolentry}
 
@@ -255,8 +255,8 @@
 \section{Personal projects}
 \begin{itemize}
     \item \textbf{Minecraft Server Utility Web Console:} End-to-end cloud platform for managing Minecraft servers, featuring remote administration, mods synchronization, and a custom logs viewer. Built using Go + NextJS + access control via Github Oauth \href{https://mccon.arhm.dev}{\textit{[Visit]}}
-    \item \textbf{Native Provisioning Client:} Developed a native cross-platform gcloud-cli wrapper using Wails for cloud infrastructure provisioning for Minecraft.\href{https://github.com/apparentlyarhm/mcc-wzrd-local}{\textit{[GitHub]}}
-    \item \textbf{Spoti-proxy:} Stateless API proxy in Go for Spotify, GitHub, and Steam with latency tracking in a self-hosted PostgreSQL instance via Tailscale \href{https://github.com/apparentlyarhm/spotify-proxy}{\textit{[GitHub]}}
+    % \item \textbf{Native Provisioning Client:} Developed a native cross-platform gcloud-cli wrapper using Wails for cloud infrastructure provisioning for Minecraft.\href{https://github.com/apparentlyarhm/mcc-wzrd-local}{\textit{[GitHub]}}
+    \item \textbf{Spoti-proxy:} Stateless API proxy in Go for Spotify, GitHub, and Steam with latency tracking in a self-hosted PostgreSQL instance via Tailscale \href{https://s-pxy.arhm.dev}{\textit{[GitHub]}}
 \end{itemize}
 
 
